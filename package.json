@@ -1,0 +1,26 @@
+{
+  "name": "electron-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./src/main/main.ts",
+  "scripts": {
+    "start:web": "vite",
+    "start:electron": "electron .",
+    "start": "npm run start:web | npm run start:electron",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "electron": "^20.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
+  }
+}
